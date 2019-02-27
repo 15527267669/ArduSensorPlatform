@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{c90d3250-922a-4456-9961-45fe690a71c6}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(MSBuildThisFileDirectory)readme.txt" />
+    <Text Include="$(MSBuildThisFileDirectory)library.properties" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- <ClInclude Include="$(MSBuildThisFileDirectory)ModbusCommOverXbeeAPI.h" /> -->
+    <ClInclude Include="$(MSBuildThisFileDirectory)dataConvertion.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ModbusCommXbeeInterface.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)XBee.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)dataConvertion.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ModbusCommXbeeInterface.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)XBee.cpp" />
+  </ItemGroup>
+</Project>

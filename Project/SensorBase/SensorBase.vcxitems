@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{cde4ef72-8ebd-439e-94b8-7bd0cc14127e}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(MSBuildThisFileDirectory)readme.txt" />
+    <Text Include="$(MSBuildThisFileDirectory)library.properties">
+      <DeploymentContent>true</DeploymentContent>
+    </Text>
+    <Text Include="$(MSBuildThisFileDirectory)SensorBase.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- <ClInclude Include="$(MSBuildThisFileDirectory)SensorBase.h" /> -->
+    <ClInclude Include="$(MSBuildThisFileDirectory)Adafruit_MAX31855.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)AutoTempHummCaculator.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)CommunicationBase.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)dataConvertion.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)dht11.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)DigitalPin.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)FanswitchPin.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Host.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)MAX31855_ThermoSensor.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ModbusCommXbeeInterface.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ModbusMaster.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ModbusRTUComm.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)MqttsnComm.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)PWM_PinSensor.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)RaintubeSensor.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)SimpleUartCommunication.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)SPI.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)TH10S_TempHum485.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Timer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)util\crc16.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)util\word.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)XBee.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Adafruit_MAX31855.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)AutoTempHummCaculator.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)CommunicationBase.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)dataConvertion.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)dht11.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)DigitalPin.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)FanswitchPin.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Host.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)MAX31855_ThermoSensor.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ModbusCommXbeeInterface.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ModbusMaster.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ModbusRTUComm.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)PWM_PinSensor.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)RaintubeSensor.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)SensorBase.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)SimpleUartCommunication.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)SPI.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)TH10S_TempHum485.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Timer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)XBee.cpp" />
+  </ItemGroup>
+</Project>

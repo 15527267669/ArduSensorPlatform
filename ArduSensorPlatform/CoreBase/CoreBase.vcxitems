@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{135b04e6-4dfc-4ed0-b918-09b64c4959a1}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(MSBuildThisFileDirectory)readme.txt" />
+    <Text Include="$(MSBuildThisFileDirectory)library.properties" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- <ClInclude Include="$(MSBuildThisFileDirectory)CoreBase.h" /> -->
+    <ClInclude Include="$(MSBuildThisFileDirectory)CommunicationBase.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Host.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)SensorBase.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Timer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)CommunicationBase.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Host.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)SensorBase.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Timer.cpp" />
+  </ItemGroup>
+</Project>

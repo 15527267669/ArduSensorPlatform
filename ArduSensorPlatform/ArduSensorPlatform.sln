@@ -1,0 +1,75 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ArduSensorPlatform", "ArduSensorPlatform\ArduSensorPlatform.vcxproj", "{C5F80730-F44F-4478-BDAE-6634EFC2CA88}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CoreBase", "CoreBase\CoreBase.vcxitems", "{135B04E6-4DFC-4ED0-B918-09B64C4959A1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UartCommunicatior", "UartCommunicatior\UartCommunicatior.vcxitems", "{67AB909C-A453-4EA7-87E0-F0E1677C3A88}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ModbusRTUCommunicator", "ModbusRTUCommunicator\ModbusRTUCommunicator.vcxitems", "{19CA8B0A-1DD1-48B4-BD7C-6EAA370309CF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ModbusCommOverXbeeAPI", "ModbusCommOverXbeeAPI\ModbusCommOverXbeeAPI.vcxitems", "{C90D3250-922A-4456-9961-45FE690A71C6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MAX31855ThermoCoupleSensor", "MAX31855ThermoSensor\MAX31855ThermoSensor.vcxitems", "{4B881079-F86B-4B8D-ADF2-957F185DA2BB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TempHummCaculator", "TempHummCaculator\TempHummCaculator.vcxitems", "{014A5605-B459-493F-9163-F1649893828E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Dht11Sensor", "Dht11Sensor\Dht11Sensor.vcxitems", "{B08888EB-0293-4905-A6B8-55F2D623A67A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DigitalPinSensor", "DigitalPinSensor\DigitalPinSensor.vcxitems", "{F7D68D67-26CF-4996-B6BC-4A264FF38300}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FanSwitchSensor", "FanSwitchSensor\FanSwitchSensor.vcxitems", "{7E31E832-3CAC-4639-BE41-0822CA6ED3B5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AnalogtoDigitalSensor", "AnalogtoDigitalSensor\AnalogtoDigitalSensor.vcxitems", "{E3C1F7AF-7121-4C63-9DA2-3AF12DD46EFE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Modbus485RaintubeSensor", "Modbus485RaintubeSensor\Modbus485RaintubeSensor.vcxitems", "{FD50A7CA-8BA0-41C9-ACAF-488728F1CFBA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Modbus485TH10S_TempHumSensor", "Modbus485TH10S_TempHumSensor\Modbus485TH10S_TempHumSensor.vcxitems", "{E9D838D1-8E1B-4F4C-AD7D-3F8338DC0B45}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		TempHummCaculator\TempHummCaculator.vcxitems*{014a5605-b459-493f-9163-f1649893828e}*SharedItemsImports = 9
+		CoreBase\CoreBase.vcxitems*{135b04e6-4dfc-4ed0-b918-09b64c4959a1}*SharedItemsImports = 9
+		ModbusRTUCommunicator\ModbusRTUCommunicator.vcxitems*{19ca8b0a-1dd1-48b4-bd7c-6eaa370309cf}*SharedItemsImports = 9
+		MAX31855ThermoSensor\MAX31855ThermoSensor.vcxitems*{4b881079-f86b-4b8d-adf2-957f185da2bb}*SharedItemsImports = 9
+		UartCommunicatior\UartCommunicatior.vcxitems*{67ab909c-a453-4ea7-87e0-f0e1677c3a88}*SharedItemsImports = 9
+		FanSwitchSensor\FanSwitchSensor.vcxitems*{7e31e832-3cac-4639-be41-0822ca6ed3b5}*SharedItemsImports = 9
+		Dht11Sensor\Dht11Sensor.vcxitems*{b08888eb-0293-4905-a6b8-55f2d623a67a}*SharedItemsImports = 9
+		AnalogtoDigitalSensor\AnalogtoDigitalSensor.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
+		CoreBase\CoreBase.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
+		Dht11Sensor\Dht11Sensor.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
+		DigitalPinSensor\DigitalPinSensor.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
+		FanSwitchSensor\FanSwitchSensor.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
+		MAX31855ThermoSensor\MAX31855ThermoSensor.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
+		Modbus485RaintubeSensor\Modbus485RaintubeSensor.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
+		Modbus485TH10S_TempHumSensor\Modbus485TH10S_TempHumSensor.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
+		ModbusCommOverXbeeAPI\ModbusCommOverXbeeAPI.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
+		ModbusRTUCommunicator\ModbusRTUCommunicator.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
+		TempHummCaculator\TempHummCaculator.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
+		UartCommunicatior\UartCommunicatior.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
+		ModbusCommOverXbeeAPI\ModbusCommOverXbeeAPI.vcxitems*{c90d3250-922a-4456-9961-45fe690a71c6}*SharedItemsImports = 9
+		AnalogtoDigitalSensor\AnalogtoDigitalSensor.vcxitems*{e3c1f7af-7121-4c63-9da2-3af12dd46efe}*SharedItemsImports = 9
+		Modbus485TH10S_TempHumSensor\Modbus485TH10S_TempHumSensor.vcxitems*{e9d838d1-8e1b-4f4c-ad7d-3f8338dc0b45}*SharedItemsImports = 9
+		DigitalPinSensor\DigitalPinSensor.vcxitems*{f7d68d67-26cf-4996-b6bc-4a264ff38300}*SharedItemsImports = 9
+		Modbus485RaintubeSensor\Modbus485RaintubeSensor.vcxitems*{fd50a7ca-8ba0-41c9-acaf-488728f1cfba}*SharedItemsImports = 9
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Debug|x86.ActiveCfg = Debug|Win32
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Debug|x86.Build.0 = Debug|Win32
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Release|x86.ActiveCfg = Release|Win32
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B41E2B55-2FB1-4AFF-991A-04FCF724C302}
+	EndGlobalSection
+EndGlobal
