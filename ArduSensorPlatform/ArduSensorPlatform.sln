@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ArduSensorPlatform", "ArduSensorPlatform\ArduSensorPlatform.vcxproj", "{C5F80730-F44F-4478-BDAE-6634EFC2CA88}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CoreBase", "CoreBase\CoreBase.vcxitems", "{135B04E6-4DFC-4ED0-B918-09B64C4959A1}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UartCommunicatior", "UartCommunicatior\UartCommunicatior.vcxitems", "{67AB909C-A453-4EA7-87E0-F0E1677C3A88}"
@@ -29,16 +27,28 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Modbus485RaintubeSensor", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Modbus485TH10S_TempHumSensor", "Modbus485TH10S_TempHumSensor\Modbus485TH10S_TempHumSensor.vcxitems", "{E9D838D1-8E1B-4F4C-AD7D-3F8338DC0B45}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MqttsnCommunicator", "MqttsnCommunicator\MqttsnCommunicator.vcxitems", "{105A6FA7-11AB-4F66-B9A3-71C6FAC805FD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ArduAppTemplate", "ArduAppTemplate\ArduAppTemplate.vcxproj", "{C5F80730-F44F-4478-BDAE-6634EFC2CA88}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CFETdeviceCommunicator", "CFETdeviceCommunicator\CFETdeviceCommunicator.vcxitems", "{B331FB16-422E-4E76-9944-1A8C1B2A20CE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pub-SubPatternCommHelperBase", "Pub-SubPatternCommHelper\Pub-SubPatternCommHelper.vcxitems", "{7E119A04-A21F-48A3-8371-05E621F72C24}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		TempHummCaculator\TempHummCaculator.vcxitems*{014a5605-b459-493f-9163-f1649893828e}*SharedItemsImports = 9
+		MqttsnCommunicator\MqttsnCommunicator.vcxitems*{105a6fa7-11ab-4f66-b9a3-71c6fac805fd}*SharedItemsImports = 9
 		CoreBase\CoreBase.vcxitems*{135b04e6-4dfc-4ed0-b918-09b64c4959a1}*SharedItemsImports = 9
 		ModbusRTUCommunicator\ModbusRTUCommunicator.vcxitems*{19ca8b0a-1dd1-48b4-bd7c-6eaa370309cf}*SharedItemsImports = 9
 		MAX31855ThermoSensor\MAX31855ThermoSensor.vcxitems*{4b881079-f86b-4b8d-adf2-957f185da2bb}*SharedItemsImports = 9
 		UartCommunicatior\UartCommunicatior.vcxitems*{67ab909c-a453-4ea7-87e0-f0e1677c3a88}*SharedItemsImports = 9
+		Pub-SubPatternCommHelper\Pub-SubPatternCommHelper.vcxitems*{7e119a04-a21f-48a3-8371-05e621f72c24}*SharedItemsImports = 9
 		FanSwitchSensor\FanSwitchSensor.vcxitems*{7e31e832-3cac-4639-be41-0822ca6ed3b5}*SharedItemsImports = 9
 		Dht11Sensor\Dht11Sensor.vcxitems*{b08888eb-0293-4905-a6b8-55f2d623a67a}*SharedItemsImports = 9
+		CFETdeviceCommunicator\CFETdeviceCommunicator.vcxitems*{b331fb16-422e-4e76-9944-1a8c1b2a20ce}*SharedItemsImports = 9
 		AnalogtoDigitalSensor\AnalogtoDigitalSensor.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
+		CFETdeviceCommunicator\CFETdeviceCommunicator.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
 		CoreBase\CoreBase.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
 		Dht11Sensor\Dht11Sensor.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
 		DigitalPinSensor\DigitalPinSensor.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
@@ -48,6 +58,8 @@ Global
 		Modbus485TH10S_TempHumSensor\Modbus485TH10S_TempHumSensor.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
 		ModbusCommOverXbeeAPI\ModbusCommOverXbeeAPI.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
 		ModbusRTUCommunicator\ModbusRTUCommunicator.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
+		MqttsnCommunicator\MqttsnCommunicator.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
+		Pub-SubPatternCommHelper\Pub-SubPatternCommHelper.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
 		TempHummCaculator\TempHummCaculator.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
 		UartCommunicatior\UartCommunicatior.vcxitems*{c5f80730-f44f-4478-bdae-6634efc2ca88}*SharedItemsImports = 4
 		ModbusCommOverXbeeAPI\ModbusCommOverXbeeAPI.vcxitems*{c90d3250-922a-4456-9961-45fe690a71c6}*SharedItemsImports = 9

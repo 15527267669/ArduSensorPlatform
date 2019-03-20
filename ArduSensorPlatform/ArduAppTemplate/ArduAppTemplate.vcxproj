@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C5F80730-F44F-4478-BDAE-6634EFC2CA88}</ProjectGuid>
+    <RootNamespace>ArduAppTemplate</RootNamespace>
+    <ProjectName>ArduAppTemplate</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>
+    </PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>
+    </PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>
+    </PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>
+    </PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+    <Import Project="..\AnalogtoDigitalSensor\AnalogtoDigitalSensor.vcxitems" Label="Shared" />
+    <Import Project="..\CoreBase\CoreBase.vcxitems" Label="Shared" />
+    <Import Project="..\Dht11Sensor\Dht11Sensor.vcxitems" Label="Shared" />
+    <Import Project="..\DigitalPinSensor\DigitalPinSensor.vcxitems" Label="Shared" />
+    <Import Project="..\FanSwitchSensor\FanSwitchSensor.vcxitems" Label="Shared" />
+    <Import Project="..\MAX31855ThermoSensor\MAX31855ThermoSensor.vcxitems" Label="Shared" />
+    <Import Project="..\Modbus485RaintubeSensor\Modbus485RaintubeSensor.vcxitems" Label="Shared" />
+    <Import Project="..\Modbus485TH10S_TempHumSensor\Modbus485TH10S_TempHumSensor.vcxitems" Label="Shared" />
+    <Import Project="..\ModbusCommOverXbeeAPI\ModbusCommOverXbeeAPI.vcxitems" Label="Shared" />
+    <Import Project="..\ModbusRTUCommunicator\ModbusRTUCommunicator.vcxitems" Label="Shared" />
+    <Import Project="..\MqttsnCommunicator\MqttsnCommunicator.vcxitems" Label="Shared" />
+    <Import Project="..\TempHummCaculator\TempHummCaculator.vcxitems" Label="Shared" />
+    <Import Project="..\UartCommunicatior\UartCommunicatior.vcxitems" Label="Shared" />
+    <Import Project="..\CFETdeviceCommunicator\CFETdeviceCommunicator.vcxitems" Label="Shared" />
+    <Import Project="..\Pub-SubPatternCommHelper\Pub-SubPatternCommHelper.vcxitems" Label="Shared" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\ArduAppTemplate;$(ProjectDir)..\AnalogtoDigitalSensor;$(ProjectDir)..\CoreBase;$(ProjectDir)..\Dht11Sensor;$(ProjectDir)..\DigitalPinSensor;$(ProjectDir)..\FanSwitchSensor;$(ProjectDir)..\MAX31855ThermoSensor;$(ProjectDir)..\Modbus485RaintubeSensor;$(ProjectDir)..\Modbus485TH10S_TempHumSensor;$(ProjectDir)..\ModbusCommOverXbeeAPI;$(ProjectDir)..\ModbusRTUCommunicator;$(ProjectDir)..\MqttsnCommunicator;$(ProjectDir)..\TempHummCaculator;$(ProjectDir)..\UartCommunicatior;$(ProjectDir)..\CFETdeviceCommunicator;$(ProjectDir)..\Pub-SubPatternCommHelper;D:\Arduino\libraries;D:\Arduino\hardware\arduino\avr\libraries;C:\Users\jtext\Documents\Arduino\libraries;D:\Arduino\hardware\arduino\avr\cores\arduino;D:\Arduino\hardware\arduino\avr\variants\mega;D:\Arduino\hardware\tools\avr\avr\include;D:\Arduino\hardware\tools\avr\avr\include\avr;D:\Arduino\hardware\tools\avr\lib\gcc\avr\4.8.1\include;D:\Arduino\hardware\tools\avr\lib\gcc\avr\4.9.2\include;D:\Arduino\hardware\tools\avr\lib\gcc\avr\4.9.3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ProjectDir)__vm\.ArduAppTemplate.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <PreprocessorDefinitions>__AVR_ATmega2560__;F_CPU=16000000L;ARDUINO=10805;ARDUINO_AVR_MEGA2560;ARDUINO_ARCH_AVR;__cplusplus=201103L;_VMICRO_INTELLISENSE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="VisualMicro" />
+  </ItemGroup>
+  <PropertyGroup>
+    <DebuggerFlavor>VisualMicroDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="ArduAppTemplate.ino">
+      <FileType>CppCode</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="__vm\.ArduAppTemplate.vsarduino.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

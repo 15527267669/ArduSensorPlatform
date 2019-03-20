@@ -69,6 +69,7 @@
     <Import Project="..\AnalogtoDigitalSensor\AnalogtoDigitalSensor.vcxitems" Label="Shared" />
     <Import Project="..\Modbus485RaintubeSensor\Modbus485RaintubeSensor.vcxitems" Label="Shared" />
     <Import Project="..\Modbus485TH10S_TempHumSensor\Modbus485TH10S_TempHumSensor.vcxitems" Label="Shared" />
+    <Import Project="..\MqttsnCommunicator\MqttsnCommunicator.vcxitems" Label="Shared" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />

@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{105a6fa7-11ab-4f66-b9a3-71c6fac805fd}</ItemsProjectGuid>
+    <ItemsProjectName>MqttsnCommHelper</ItemsProjectName>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(MSBuildThisFileDirectory)readme.txt" />
+    <Text Include="$(MSBuildThisFileDirectory)library.properties" />
+    <Text Include="$(MSBuildThisFileDirectory)MqttsnCommunicatorBase.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- <ClInclude Include="$(MSBuildThisFileDirectory)MqttsnCommunicator.h" /> -->
+    <ClInclude Include="$(MSBuildThisFileDirectory)Dhcp.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Dns.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Ethernet.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)EthernetClient.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)EthernetServer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)EthernetUdp.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)mqttsn.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)mqttsnClient.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)mqttsnClientAppFw4Arduino.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)mqttsnClientAppFw4Linux.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)mqttsnClientAppFw4mbed.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)MqttsnCommHelper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)MQTTSN_Application.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)mqUtil.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Network.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)SPI.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)udpStack.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)zbeeStack.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Dhcp.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Dns.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Ethernet.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)EthernetClient.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)EthernetServer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)EthernetUdp.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)mqttsn.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)mqttsnClient.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)mqttsnClientAppFw4Arduino.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)mqttsnClientAppFw4Linux.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)mqttsnClientAppFw4mbed.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)MqttsnCommHelper.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)MqttsnCommunicatorBase.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)mqUtil.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)SPI.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)udpStack.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)zbeeStack.cpp" />
+  </ItemGroup>
+</Project>

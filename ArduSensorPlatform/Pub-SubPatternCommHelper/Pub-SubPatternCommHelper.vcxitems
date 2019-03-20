@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{7e119a04-a21f-48a3-8371-05e621f72c24}</ItemsProjectGuid>
+    <ItemsProjectName>Pub-SubPatternCommHelperBase</ItemsProjectName>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(MSBuildThisFileDirectory)readme.txt" />
+    <Text Include="$(MSBuildThisFileDirectory)library.properties" />
+    <Text Include="$(MSBuildThisFileDirectory)Pub_SubPatternCommHelper.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)mqttsn.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)mqUtil.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Pub_SubPatternCommHelper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)mqttsn.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)mqUtil.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Network.h" />
+  </ItemGroup>
+</Project>
