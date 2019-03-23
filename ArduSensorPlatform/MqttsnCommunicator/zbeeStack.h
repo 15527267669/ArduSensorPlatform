@@ -324,6 +324,7 @@ public:
     void resetGwAddress(void);
     void setRxHandler(void (*callbackPtr)(NWResponse* data, int* returnCode));
     int  initialize(XBeeConfig  config);
+	XBResponse getResponse();
 
 private:
     void setSleep();

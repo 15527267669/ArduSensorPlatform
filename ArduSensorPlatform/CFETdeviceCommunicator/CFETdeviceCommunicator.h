@@ -20,25 +20,27 @@
 
 //这里指的是各个topic的名字，而不是payload
 typedef struct {
-	//传感器平台名字
+	//传感器平台名字,max=4
 	char* slaveName;
-	//传感器平台通道描述
+	//传感器平台通道描述,6
 	char* channelDescrip;
+	//
+	Pub_SubCommHelperBase* Pub_SubCommHelper;
 	//发现topic
 	char* discTopic;
 	//注册topic
 	char* regisTopic;
-	//注册确认topic
+	//注册确认topic,max=6
 	char* regisConfirmTopic;
-	//传感器平台发布topic
+	//传感器平台发布topic,max=6
 	char* publishTopic;
-	//传感器心跳Topic
+	//传感器心跳Topic,6
 	char* sensorPingTopic;
-	//CFET心跳Topic
+	//CFET心跳Topic,6
 	char* cfetPingTopic;
-	//CFET读通道topic
+	//CFET读通道topic,6
 	char* cfetReadTopic;
-	//CFET写通道topic
+	//CFET写通道topic,6
 	char* cfetWriteTopic;
 }CfetDeviceCommConfig;
 
@@ -92,6 +94,8 @@ private:
 	//CFET写通道topic
 	MQString*_cfetWriteTopic;
 	//Sensor心跳计时器
+	//host
+	Host* _host;
 	unsigned long _sensorPingTimer;
 	//CFET 状态
 	bool _cfetStatus= true;
@@ -99,6 +103,10 @@ private:
 	unsigned long _maxPingInterval;
 	//更新的传感器通道,初始值-1表示没有需要更新的通道
 	int _ChannelUpdated=-1;
+	//收到的CFET报文起始地址
+	char* _receiveDataPtr;
+	//收到的CFET报文长度
+	uint8_t  _receiveDataLength;
 
 
 
@@ -106,6 +114,10 @@ private:
 	void checkOnline();
 	//check sensor channelvalue updated or not 
 	void checkChUpdated(Host * host);
+	////解析收到的publish报文
+	//void analyzeReceiveData();
+	void runRead(Host* host);
+	void runWrite(Host* host);
 
 	
 

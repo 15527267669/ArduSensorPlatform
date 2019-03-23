@@ -578,6 +578,11 @@ int Network::initialize(XBeeConfig config){
 	return _serialPort->open(config);
 }
 
+XBResponse tomyClient::Network::getResponse()
+{
+	return _response;
+}
+
 void Network::setSleep(){
 	_sleepflg = true;
 }

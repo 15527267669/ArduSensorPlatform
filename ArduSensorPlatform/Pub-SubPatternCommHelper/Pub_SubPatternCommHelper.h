@@ -45,6 +45,9 @@ public:
 	virtual void startWdt()=0;
 	virtual void stopWdt()=0;
 	virtual int  run()=0;
+	virtual int	sendRecvMsg() = 0;
+	virtual uint8_t* getReceiveDataPtr()=0;
+	virtual uint8_t getReceiveDatalength()=0;
 	virtual void setUnixTime(MqttsnPublish* msg)=0;
 private:
 

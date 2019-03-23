@@ -77,6 +77,20 @@ int MqttsnCommHelper::run()
 	theApplication->run();
 	return 0;
 }
+int MqttsnCommHelper::sendRecvMsg()
+{
+	//call mqttsn sendRecvMsg method of theApplication 
+	theApplication->_mqttsn.sendRecvMsg();
+	return 0;
+}
+uint8_t * MqttsnCommHelper::getReceiveDataPtr()
+{
+	return theApplication->_mqttsn._receiveData;
+}
+uint8_t MqttsnCommHelper::getReceiveDatalength()
+{
+	return theApplication->_mqttsn._receiveDataLength;
+}
 void MqttsnCommHelper::setUnixTime(MqttsnPublish * msg)
 {
 	MqttsnCommHelper(msg);

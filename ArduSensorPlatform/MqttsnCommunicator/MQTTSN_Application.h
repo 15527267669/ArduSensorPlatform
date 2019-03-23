@@ -45,6 +45,8 @@
 	#define LINUX
 	//#define MBED
 #endif
+/*----------- Select SensorPlatform  ---------*/
+#define ARDU_SENSOR_PLATFORM
 
 /*--------- Select byte order ----------*/
 #define CPU_LITTLEENDIANN

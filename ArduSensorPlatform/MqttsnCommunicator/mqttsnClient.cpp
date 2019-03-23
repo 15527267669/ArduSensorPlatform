@@ -390,6 +390,19 @@ int MqttsnClient::sendRecvMsg(){
 
 	/*======= Receive Message ===========*/
 	_network->readPacket();  //  Receive MQTT-S Message
+#ifdef ARDU_SENSOR_PLATFORM
+	//store MQTT-S Message,and get the data from MQTT-S Message frame
+	XBResponse _receiveMessage = _network->getResponse();//store MQTT-S Message
+	uint8_t _receiveMessageLength = _receiveMessage.getFrameLength();
+	uint8_t* frameDataPtr = _receiveMessage.getFrameDataPtr();
+	if (frameDataPtr[1]== MQTTSN_TYPE_PUBLISH)
+	{
+		_receiveData = frameDataPtr + 7;
+		_receiveDataLength = frameDataPtr[0] - 7;
+	}
+
+
+#endif // ARDU_SENSOR_PLATFORM
 
 	if (_clientStatus.isPINGREQRequired()){
 		/*-------- Send PINGREQ -----------*/

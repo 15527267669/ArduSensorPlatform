@@ -192,6 +192,11 @@ public:
     MQString* getClientId();
     ClientStatus* getClientStatus();
     bool isCleanSession();
+#ifdef ARDU_SENSOR_PLATFORM
+	uint8_t* _receiveData;
+	uint8_t _receiveDataLength;
+#endif // ARDU_SENSOR_PLATFORM
+
 
 
     int  publish(MQString* topic, const char* data, int dataLength, uint8_t qos = 1);
@@ -209,12 +214,13 @@ public:
     void recieveMessageHandler(NWResponse* msg, int* returnCode);
     void publishHdl(MqttsnPublish* msg);
     void recvMsg(uint16_t msec);
+	int  sendRecvMsg();
     int  exec();
     int readPacket();
     uint8_t getMsgRequestCount();
 
 private:
-    int  sendRecvMsg();
+    
     void clearMsgRequest();
     int  requestSendMsg(MqttsnMessage* msg);
     int  requestPrioritySendMsg(MqttsnMessage* mqttsMsgPtr);

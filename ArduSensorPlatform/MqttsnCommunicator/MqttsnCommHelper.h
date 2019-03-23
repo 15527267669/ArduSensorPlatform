@@ -55,6 +55,9 @@ public:
 	void startWdt();
 	void stopWdt();
 	int  run();
+	virtual int	sendRecvMsg();
+	virtual uint8_t* getReceiveDataPtr();
+	virtual uint8_t getReceiveDatalength();
 	void setUnixTime(MqttsnPublish* msg);
 
 
