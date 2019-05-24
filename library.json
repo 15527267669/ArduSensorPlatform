@@ -14,7 +14,7 @@
       "email": "652107085@qq.com",
       "maintainer": true
     }
-
+],
   "version": "3.7.7",
   "frameworks": "arduino",
   "platforms": "*"
