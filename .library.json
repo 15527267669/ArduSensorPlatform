@@ -1,0 +1,21 @@
+{
+  "name": "ArduSensorPlatform",
+  "keywords": "arduino, sensor, platform, framework",
+  "description": "Arduino Library for a generic software framework",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/RoliAlpha/ArduSensorPlatform.git"
+  },
+  "authors":
+  [
+    {
+      "name": "RoliAlpha",
+      "email": "652107085@qq.com",
+      "maintainer": true
+    }
+
+  "version": "3.7.7",
+  "frameworks": "arduino",
+  "platforms": "*"
+}
