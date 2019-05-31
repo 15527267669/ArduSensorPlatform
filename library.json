@@ -1,21 +1,40 @@
 {
   "name": "ArduSensorPlatform",
-  "keywords": "arduino, sensor, platform, framework",
-  "description": "Arduino Library for a generic software framework",
+  "keywords": "arduino, sensor, framework",
+  "description": "Arduino Library for generic sensor",
   "repository":
   {
     "type": "git",
     "url": "https://github.com/RoliAlpha/ArduSensorPlatform.git"
   },
-  "authors":
+  "authors": 
   [
     {
       "name": "RoliAlpha",
       "email": "652107085@qq.com",
+      "url": "http://www.milesburton.com",
       "maintainer": true
+    },
+    {
+      "name": "zhengwei",
+      "email": "652107085@qq.com"
+    },
+    {
+      "name": "wuqiqi",
+      "email": "652107085@qq.com"
+    },
+    {
+      "name": "wangyuxing",
+      "email": "652107085@qq.com"
     }
   ],
-  "version": "3.7.7",
+  "dependencies":
+  {
+    "name": "OneWire",
+    "authors": "Paul Stoffregen",
+    "frameworks": "arduino"
+  },
+  "version": "3.8.0",
   "frameworks": "arduino",
   "platforms": "*"
 }
